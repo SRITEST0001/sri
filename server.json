@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "biz.sri-test/verifier",
+  "title": "SRI — MCP Server Inspector",
+  "description": "Read what an MCP server does before connecting: facts quoted at file:line. Free, no key.",
+  "version": "0.2.0",
+  "websiteUrl": "https://sri-test.biz",
+  "repository": {
+    "url": "https://github.com/SRITEST0001/sri",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://sri-test.biz/mcp"
+    }
+  ]
+}
