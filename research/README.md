@@ -108,6 +108,26 @@ categories above, in the code we could fetch.
 A server can appear in several categories; percentages are shares of servers
 with at least one finding in that category, not shares of findings.
 
+## Recomputing these numbers
+
+The counts in this directory are a snapshot. The live figures are served as
+JSON, free and without a key, so you can recompute rather than trust the CSV:
+
+```bash
+curl https://sri-test.biz/v1/corpus
+```
+
+That returns coverage totals and the per-category shares. To see which servers
+were read — names and versions only, no findings — page through the index:
+
+```bash
+curl 'https://sri-test.biz/v1/corpus/index?limit=100'
+```
+
+Follow `next_cursor` until it comes back `null`. Presence in the index means the
+source was read; it carries no verdict. Absence means not yet read, which is not
+the same as clean.
+
 ## Checking a specific server
 
 The corpus is queryable, free, no key:
