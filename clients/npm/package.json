@@ -1,0 +1,35 @@
+{
+  "name": "sri-check",
+  "version": "0.1.0",
+  "description": "Read what an MCP server does before you connect to it. Findings quoted at file:line from the published source. Free, no key.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "security",
+    "supply-chain",
+    "audit",
+    "agent"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "sri-check": "bin/sri-check.js"
+  },
+  "files": [
+    "bin/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "homepage": "https://sri-test.biz",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SRITEST0001/sri.git",
+    "directory": "clients/npm"
+  },
+  "bugs": {
+    "url": "https://sri-test.biz/contact"
+  }
+}
